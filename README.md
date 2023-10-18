@@ -64,7 +64,7 @@ The Budget app is a mobile web application where you can manage your budget: you
 
 ## 🎥 Live Video <a name="live-video"></a>
 
-- [Live video Link]()
+- [Live video Link](https://www.loom.com/share/6c23296d5d314afe993d5bcdffcaa2e6?sid=51942299-3889-491c-98cb-88bae8645864)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
