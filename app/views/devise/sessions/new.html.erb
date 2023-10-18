@@ -1,35 +1,24 @@
-<div class="container-fluid w-100 d-flex flex-column align-items-center">
-  <div class="row">
-    <div class="col">
-      <div class="card mt-5">
-        <div class="card-body">
-          <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form"}) do |f| %>
-            <div class="form-group">
-              <%= f.label :email, class: "font-light" %>
-              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control font-light" %>
-            </div>
-
-            <div class="form-group">
-              <%= f.label :password, class: "font-light" %>
-              <%= f.password_field :password, autocomplete: "current-password", class: "form-control font-light" %>
-            </div>
-
-            <% if devise_mapping.rememberable? %>
-              <div class="form-group form-check">
-                <%= f.check_box :remember_me, class: "form-check-input" %>
-                <%= f.label :remember_me, class: "form-check-label font-light" %>
-              </div>
-            <% end %>
-
-            <div class="form-group">
-              <%= f.submit "Log in", class: "form-btns login-btn font-light" %>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-  <%= render "devise/shared/links" %>
+<div class="payments-header">
+  <%= link_to unauthenticated_root_path do %>
+    <i class="back-button bi bi-chevron-left"></i>
+  <% end %>
+  <h1 class="heading font-light">LOGIN</h1>
+  <%= button_tag "Log In", class: "next-btn font-light", id: "login-button" %>
 </div>
+<div class="register w-100">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "signup-form d-flex flex-column"}) do |f| %>
+    <%= f.email_field :email, autofocus: true, class: "input-3 font-light", placeholder: "Email" %>
+    <%= f.password_field :password, class: "input-4 font-light", placeholder: "Password" %>
+    <% end %>
+</div>
+<div class="w-100 d-flex align-items-center justify-content-center p-3">
+<%= link_to "Forgot password?", new_password_path(resource_name), class: "forget-password font-light" %>
+</div>
+
+<script>
+  document.getElementById("login-button").addEventListener("click", function() {
+    document.querySelector("form").submit();
+  });
+</script>
 
 
