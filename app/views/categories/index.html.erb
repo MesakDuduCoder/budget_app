@@ -1,0 +1,25 @@
+<div class="categories-header">
+<h1 class="heading font-light">Categories</h1>
+<div class="logout">
+  <% if user_signed_in? %>
+  <%= link_to "Logout", "/users/sign_out", method: :delete, class: 'logout-btn font-light' %>
+  <% end %>
+</div>
+</div>
+<div class="categories">
+  <ul class="category-list">
+    <% @categories.each do |category| %>
+      <%= link_to category_payments_path(category), class: 'no-text-decoration' do %>
+      <li>
+        <span class="li-1"><%= content_tag(:i, '', class: "category-icon-large #{category.icon}") %></span>
+        <span class="li-2 font-light"><%= category.name %></span>
+        <span class="li-3 font-bold"><%= number_to_currency(category.payments.sum(:amount)) %></span>
+      </li>
+      <% end %>
+    <% end %>
+  </ul>
+
+  <div class="category-buttons">
+  <%= link_to "New Category", new_category_path, class: "new-category font-light" %> 
+  </div>
+</div>
