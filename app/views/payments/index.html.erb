@@ -7,7 +7,7 @@
 
 <div class="payments">
   <p class="font-light font-white">Total Amount for <%= @category.name %>: <%= number_to_currency(@category.payments.sum(:amount)) %></p>
-  <ul class="category-list">
+  <ul class="payment-list">
     <% @payments.each do |payment| %>
       <li>
       <span class="payment-li-1 font-light"><%= payment.name %></span>

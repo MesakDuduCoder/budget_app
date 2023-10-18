@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+body {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -125,25 +129,28 @@
   background-color: #9d9fa1;
 }
 
+.payments {
+  height: 90vh;
+}
+
 .payments p {
   color: #fff;
   font-size: 1.5rem;
 }
 
-.category-list {
+.category-list, .payment-list {
   list-style-type: none;
   padding-inline-start: 0;
   padding: 10px;
   width: 100%;
   margin-bottom: 30px;
   display: flex;
-  max-height: 85vh;
   overflow-y: scroll;
   flex-direction: column;
   gap: 10px;
 }
 
-.category-list li {
+.category-list li, .payment-list li {
   display: flex;
   align-items: center;
   padding: 7px;
