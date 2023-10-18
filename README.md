@@ -6,7 +6,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    <!-- - [🚀 Live Demo](#live-demo) -->
+    - [🎥 Live Video](#live-video) 
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,13 +60,19 @@ The Budget app is a mobile web application where you can manage your budget: you
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
+<!-- LIVE Video -->
+
+## 🎥 Live Video <a name="live-video"></a>
+
+- [Live video Link]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
+- [Live Demo Link](https://my-budget-app-t75w.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
