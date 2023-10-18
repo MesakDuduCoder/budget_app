@@ -13,3 +13,212 @@
  *= require_tree .
  *= require_self
  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    font-size: 1.5rem;
+}
+
+.font-light {
+    font-family: 'ProximaNovaLight';
+    font-size: 1.2rem;
+    color: #434b52;
+}
+
+.font-bold {
+    font-family: 'ProximaNovaBold';
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #434b52;
+}
+.font-white {
+    color: #fff;
+}
+
+.no-text-decoration {
+text-decoration: none;
+}
+
+.splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.splash-screen h2 {
+  font-size: 3.5rem;
+}
+
+.splash-screen p a {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.category-icon-large {
+    font-size: 4rem;
+    color: #3778c2;
+}
+
+.back-button {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.categories-header, .payments-header {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3778c2;
+    color: #fff;
+}
+
+.categories-header h1 {
+    margin-left: auto;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.logout {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.payments-header {
+    height: 10vh;
+    justify-content: center;
+}
+
+.payments-header h1 {
+    margin: 0;
+    margin-right: auto;
+}
+
+.payments-header a {
+    margin-right: auto;
+}
+
+.categories, .payments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    background-color: #9d9fa1;
+}
+
+.payments p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.category-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-list li {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background-color: #fff;
+  min-height: 100px;
+  color: #434b52;
+}
+
+.li-1 {
+ flex: 0.1;
+}
+
+.li-2 {
+ flex: 0.8;
+ margin-left: 5px;
+}
+
+.li-3 {
+ flex: 0.1;
+}
+
+.payment-li-1 {
+ flex: 0.4;
+}
+.payment-li-2 {
+    flex: 0.5;
+}
+.payment-li-3 {
+    flex: 0.1;
+}
+
+.category-buttons{
+    width: 100%;
+    padding: 20px;
+    background-color: #5fb523;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.new-category {
+text-decoration: none;
+color: #fff;
+border: 2px solid #fff;
+padding: 10px;
+width: 95%;
+text-align: center;
+}
+
+.categories-new, .payments-new {
+ padding: 20px;
+}
+
+.app-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-btns {
+    padding: 10px;
+    color: #fff;        
+    background-color: #5fb523;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-btn, .sign-up-btn {
+    background-color: #3778c2;
+}
+
+.sign-up-btn {
+    margin-top: 10px;
+}
+
+.category-form {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.category-select {
+  padding: 10px 5px;
+}

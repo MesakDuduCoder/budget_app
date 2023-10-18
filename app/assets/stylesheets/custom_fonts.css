@@ -1,0 +1,11 @@
+/* app/assets/stylesheets/custom_fonts.css */
+
+@font-face {
+  font-family: 'ProximaNovaBold', Arial, sans-serif;
+  src: url('Fontspring-DEMO-proximanova-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ProximaNovaLight', Arial, sans-serif;
+    src: url('Fontspring-DEMO-proximanova-light.otf') format('opentype');
+}
