@@ -6,13 +6,19 @@
 </div>
 
 <div class="payments">
-  <p class="font-light font-white">Total Amount for <%= @category.name %>: <%= number_to_currency(@category.payments.sum(:amount)) %></p>
+  <p class="font-bold mt-1">Total Amount for <%= @category.name %>: <%= number_to_currency(@category.payments.sum(:amount)) %></p>
   <ul class="payment-list">
     <% @payments.each do |payment| %>
       <li>
-      <span class="payment-li-1 font-light"><%= payment.name %></span>
-      <span class="payment-li-2 font-light"><%= payment.created_at.strftime("%B %d, %Y") %></span>
-      <span class="payment-li-3 font-bold"><%= number_to_currency(payment.amount) %></li></span>
+      <div class="payment-image payment-li-1">
+      <i class="payment-icon bi bi-currency-dollar"></i>
+      </div>
+      <div class="payment-li-2">
+        <span class="font-light"><%= payment.name %></span>
+        <span class="payment-date font-light"><%= payment.created_at.strftime("%B %d, %Y") %></span>
+      </div>
+      <span class="payment-li-3 font-bold"><%= number_to_currency(payment.amount) %></span>
+      </li>
     <% end %>
   </ul>
 
