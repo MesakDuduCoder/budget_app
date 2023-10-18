@@ -48,7 +48,18 @@ body {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none;
+}
+
+/* Remove autofill background-color for input fields */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
 .splash-screen {
+  background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,6 +69,86 @@ body {
 
 .splash-screen h2 {
   font-size: 3.5rem;
+  margin-top: auto;
+}
+
+.splash-screen p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.splash-signup {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signup-form {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.register {
+  border-top: 1px solid rgba(67, 75, 82, 0.5);
+  border-bottom: 1px solid rgba(67, 75, 82, 0.5);
+  margin-top: 30px;
+}
+
+.register-header {
+  display: flex;
+  align-items: center;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.next-btn {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.upload-profile {
+  margin: 0;
+  color: #434b52;
+  opacity: 0.7;
+}
+
+.profile-icon {
+  font-size: 3rem;
+  color: #434b52;
+  opacity: 0.5;
+}
+
+.input-1,
+.input-2,
+.input-3,
+.input-4 {
+  padding: 10px;
+  border: none;
+  opacity: 0.7;
+}
+
+.input-1,
+.input-2,
+.input-3 {
+  border-bottom: 1px solid rgba(67, 75, 82, 0.5);
+}
+
+.input-1 {
+  border-top: 1px solid rgba(67, 75, 82, 0.5);
+}
+
+.forget-password {
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.7;
 }
 
 .payments-header a {
@@ -65,8 +156,7 @@ body {
 }
 
 .splash-screen p a {
-  font-size: 2rem;
-  color: #fff;
+  width: 90%;
 }
 
 .category-icon-large {
@@ -126,7 +216,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 85vh;
-  background-color: #9d9fa1;
+  background-color: rgb(240, 240, 240);
 }
 
 .payments {
