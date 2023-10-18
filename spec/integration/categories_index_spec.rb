@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-RSpec.feature "Categories Page", type: :feature do
+RSpec.feature 'Categories Page', type: :feature do
   before do
-    @user = create(:user, name: 'John Doe', email: 'johndoe@email.com', password: 'password', password_confirmation: 'password')
+    @user = create(:user, name: 'John Doe', email: 'johndoe@email.com', password: 'password',
+                          password_confirmation: 'password')
     sign_in(@user)
     @payment3 = create(:payment, name: 'Payment for category 2', user: @user)
     @category1 = create(:category, name: 'Category 1', icon: 'fa fa-star', user: @user)
@@ -14,7 +15,7 @@ RSpec.feature "Categories Page", type: :feature do
     visit categories_path
   end
 
-  scenario "Displays the list of categories" do
+  scenario 'Displays the list of categories' do
     expect(page).to have_content('Categories')
 
     expect(page).to have_content('Category 1 $300')
