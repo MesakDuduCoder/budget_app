@@ -1,0 +1,27 @@
+<div class="payments-header">
+  <%= link_to unauthenticated_root_path do %>
+    <i class="back-button bi bi-chevron-left"></i>
+  <% end %>
+  <h1 class="heading font-light">REGISTER</h1>
+  <%= button_tag "Next", class: "next-btn font-light", id: "signup-button"  %>
+</div>
+<div class="register">
+  <div class="register-header">
+    <i class="profile-icon bi bi-person-circle"></i>
+    <h3 class="upload-profile font-light">Upload picture</h3>
+  </div>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "signup-form d-flex flex-column"}) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= f.text_field :name, autofocus: true, class: "input-1 font-light", placeholder: "Full name" %>
+  <%= f.email_field :email, autofocus: true, class: "input-2 font-light", placeholder: "Email" %>
+  <%= f.password_field :password, class: "input-3 font-light", placeholder: "Password" %>
+  <%= f.password_field :password_confirmation, class: "input-4 font-light", placeholder: "Password conformation" %>
+  <% end %>
+</div>
+
+<script>
+  document.getElementById("signup-button").addEventListener("click", function() {
+    document.querySelector("form").submit();
+  });
+</script>
+

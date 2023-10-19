@@ -1,0 +1,28 @@
+<div class="payments-header">
+  <%= link_to categories_path do %>
+    <i class="back-button bi bi-chevron-left"></i>
+  <% end %>
+  <h1 class="heading font-light">Payments</h1>
+</div>
+
+<div class="payments">
+  <p class="font-bold mt-1">Total Amount for <%= @category.name %>: <%= number_to_currency(@category.payments.sum(:amount)) %></p>
+  <ul class="payment-list">
+    <% @payments.each do |payment| %>
+      <li>
+      <div class="payment-image payment-li-1">
+      <i class="payment-icon bi bi-currency-dollar"></i>
+      </div>
+      <div class="payment-li-2">
+        <span class="font-light"><%= payment.name %></span>
+        <span class="payment-date font-light"><%= payment.created_at.strftime("%B %d, %Y") %></span>
+      </div>
+      <span class="payment-li-3 font-bold"><%= number_to_currency(payment.amount) %></span>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="category-buttons">
+    <%= link_to "New Transaction", new_category_payment_path(@category), class: "new-category font-light" %> 
+  </div>
+</div>
