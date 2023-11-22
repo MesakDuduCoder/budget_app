@@ -72,7 +72,7 @@ The Budget app is a mobile web application where you can manage your budget: you
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://my-budget-app-t75w.onrender.com)
+- [Live Demo Link](https://budget-app-917z.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
